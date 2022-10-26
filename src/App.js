@@ -1,24 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
+import library from './library.jpg';
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
+import Topbar from './Topbar';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Booklist from './Booklist';
+import Addbooklist from './Addbooklist';
+import Update from './Update';
+import { useEffect } from 'react';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    return (
+    <>
+    <BrowserRouter>
+    <Topbar></Topbar>
+      <Routes>
+         <Route path="/booklist" element={<Booklist></Booklist>}> </Route> 
+         <Route path="/booklist/addbook" element={<Addbooklist></Addbooklist>}> </Route> 
+         <Route path="/booklist/:id" element={<Update></Update>}> </Route> 
+      </Routes>
+    </BrowserRouter>
+      
+    </>
   );
 }
 

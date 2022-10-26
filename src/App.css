@@ -36,3 +36,98 @@
     transform: rotate(360deg);
   }
 }
+body{
+  background-color: #663333 !important;
+}
+.topbar{
+  display: flex;
+  justify-content: space-between;
+border-bottom: 1px solid white;
+ margin: 10px;
+ padding-bottom: 20px;
+}
+
+.topbar-h3{
+  color:white;
+  text-align: center;
+  margin-top: 20px;
+}
+.topbar-img{
+  width:100px !important;
+
+
+}
+.topbar-bt{
+  border:1px solid white !important;
+  background-color: none;
+  color: white !important;
+  height: 40px;
+  margin-top: 20px;
+
+}
+.topbar-bt:hover{
+  border:1px solid #CC99FF  !important; 
+  color:#CC99FF  !important;
+}
+.booklist-btn{
+  margin-left: 330px;
+}
+.booklist-bt{
+  border:1px solid white !important;
+  background-color: none;
+  color: white !important;
+  display: flex;
+  margin-top: 50px;
+  margin-left: 60px;
+}
+
+.booklist-bt:hover{
+  border:1px solid #CC99FF  !important; 
+  color:#CC99FF  !important;
+}
+label{
+  color:orange;
+}
+.addbook-bt{
+border: 1px solid white;
+border-radius: 6px;
+  color:white;
+  background: transparent;
+  margin-top: 50px;
+  margin-left: 500px;
+  padding: 8px;
+
+}
+.addbook-bt:hover{
+  border:1px solid #CC99FF  !important; 
+  color:#CC99FF  !important;
+}
+.container{
+  margin-top: 80px !important;
+}
+.form-group{
+  margin-bottom: 50px !important;
+}
+.error-box{
+  border:1px solid red !important;
+}
+.success-box{
+  border:1px solid green !important;
+}
+h1{
+  color: white !important;
+}
+.add-bt{
+  border: 1px solid white !important;
+border-radius: 6px !important;
+  color:white !important;
+  background: transparent !important;
+
+  margin-left: 500px;
+  padding: 8px !important;
+
+}
+.add-bt:hover{
+  border:1px solid #CC99FF  !important; 
+  color:#CC99FF  !important;
+}
